@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Controls">
+        <menu>
+            <item
+                android:id="@+id/mouse_and_keyboard"
+                android:icon="@drawable/keybaord_icon"
+                android:title="Mouse and keyboard"/>
+            <item
+                android:id="@+id/system_management"
+                android:icon="@drawable/controls_icon"
+                android:title="System management"/>
+
+        </menu>
+    </item>
+
+    <item android:title="Utilities">
+        <menu>
+            <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/share_icon"
+                android:title="Share content" />
+
+            <item
+                android:id="@+id/file_explorer"
+                android:icon="@drawable/files"
+                android:title="File explorer" />
+
+            <item
+                android:id="@+id/command_line"
+                android:icon="@drawable/command_line"
+                android:title="Command line" />
+        </menu>
+    </item>
+
+    <item android:title="Miscallenous">
+        <menu>
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/settings_icon"
+                android:title="Settings"/>
+
+            <item android:id="@+id/help"
+                android:icon="@drawable/help_icon"
+                android:title="Help"/>
+        </menu>
+    </item>
+</menu>

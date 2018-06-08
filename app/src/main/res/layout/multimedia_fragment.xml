@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp">
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:columnCount="4"
+                app:rowCount="3">
+
+                <android.support.design.widget.CoordinatorLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_columnSpan="4"
+                    app:layout_rowWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/repeat_icon"
+                        android:background="@color/transparent"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:weightSum="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Wake me up"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:text="Avicii"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:src="@drawable/shuffle_icon"
+                        android:background="@color/transparent"/>
+
+                </android.support.design.widget.CoordinatorLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_columnSpan="4"
+                    app:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:weightSum="6">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0:28"/>
+
+                    <SeekBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="3:54"/>
+                </LinearLayout>
+
+                <android.support.design.widget.CoordinatorLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    app:layout_columnSpan="4"
+                    app:layout_rowWeight="1">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_marginLeft="48dp"
+                        android:src="@drawable/play_backward_icon"
+                        android:background="@color/transparent"/>
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/play_icon"
+                        android:background="@color/transparent"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_marginRight="48dp"
+                        android:src="@drawable/play_forward_icon"
+                        android:background="@color/transparent"/>
+
+                </android.support.design.widget.CoordinatorLayout>
+            </android.support.v7.widget.GridLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/spacebar_gradient"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp">
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:columnCount="5"
+                app:rowCount="3"
+                android:paddingTop="12dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    app:layout_columnSpan="5"
+                    android:text="Volume"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    app:layout_columnWeight="1"
+                    app:layout_columnSpan="5"
+                    app:layout_rowWeight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/volume_icon"/>
+
+                    <SeekBar
+                        android:id="@+id/seekBar2"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="match_parent"
+                        android:max="50"
+                        android:progress="22"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="60 %"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    app:layout_columnWeight="1"
+                    app:layout_columnSpan="5"
+                    app:layout_rowWeight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/mute_icon"/>
+
+                    <Switch
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="8dp"
+                        android:text="Sound mute"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.GridLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/spacebar_gradient"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/colorAccent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="12dp"
+                        android:text="Media resources"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:weightSum="5"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp">
+
+                        <SearchView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            style="@style/SearchViewStyle"
+                            android:textSize="16sp"/>
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/playlist_sort"
+                            android:background="@color/transparent"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/media_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="true">
+
+                </ListView>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
